@@ -19,7 +19,7 @@ class MULTI_HX711
     byte* CLOCK_PINS; // Ändern auf Array-Zeiger
     byte* OUT_PINS; // Ändern auf Array-Zeiger
     uint16_t* FACTOR; // Privates Mitglied für das Faktorarray
-    uint32_t* data; // Privates Mitglied für das Datenarray
+    int32_t* data; // Privates Mitglied für das Datenarray
     float* kilos; // Privates Mitglied für das Kiloarray
     uint32_t* tare; // Privates Mitglied für das Taraarray
 

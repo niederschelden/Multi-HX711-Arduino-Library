@@ -13,6 +13,7 @@ This means: it works for me (ESP8266) but may have various issues on other platt
 | Add an atomic block for critical operations  | [bogde](https://github.com/bogde/HX711/blob/master/src/HX711.cpp)               | Implementet but untested      |
 | Implement a tare method                      |                         | Done       |
 | Keep the code simple                         |               | NeverDone      |
+| Change Tara to generate negative data if needed | | not jet compiled|
 
 
 ## Multi HX711 Arduino Library
@@ -42,8 +43,8 @@ Additionally, it can also accept two arrays of pin numbers for more advanced set
 | init           | Initializes the HX711 with arrays of output and clock pins.            | void        |
 | readyToSend    | Checks if the HX711 is ready to send data.                             | bool        |
 | setGain        | Sets the gain of the HX711 amplifier.                                  | void        |
-| read           | Reads the raw data from the HX711.                                     | uint32_t*   |
-| readTare       | Reads the raw data from the HX711 after applying the tare.             | uint32_t*   |
+| read           | Reads the raw data from the HX711.                                     | int32_t*   |
+| readTare       | Reads the raw data from the HX711 after applying the tare.             | int32_t*   |
 | readTareKilo   | Reads the data from the HX711 after applying the tare and converting it to kilograms. | float*    |
 | setTare        | Sets the tare values for subsequent readings.                          | void        |
 | setFactor      | Sets the conversion factor for each output pin.                        | void        |
