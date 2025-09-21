@@ -58,7 +58,8 @@ MULTI_HX711::~MULTI_HX711()
   delete[] OUT_PINS;
   delete[] data;
   delete[] tare;
-  delete[] kilos; 
+  delete[] kilos;
+  delete[] FACTOR; 
 }
 
 void MULTI_HX711::setTare(byte runs, byte delays) {
